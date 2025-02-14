@@ -1,0 +1,59 @@
+name: Auto Deploy
+
+run-name: Deploy by @${{ github.actor }}
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  my_first_job:
+    name: build-and-deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      # 拉取主仓库代码
+      - name: Clone Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          # 初始化并拉取子模块
+          submodules: true
+          token: ${{ secrets.SUBMODULE_PAT }}
+
+      # 安装 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.15.0'
+
+      # 缓存 npm 依赖
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-cache-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-cache-
+
+      # 安装 yarn
+      - name: Install yarn
+        run: npm install -g yarn
+
+      # 安装依赖
+      - name: Install dependencies
+        if: steps.cache-deps.outputs.cache-hit != 'true'
+        run: yarn
+
+      # 运行构建脚本
+      - name: Run Build Script
+        run: npm run build
+
+      # 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          FOLDER: public
+          BRANCH: gh-pages
+          TOKEN: ${{ secrets.ACCESS_TOKEN }}
