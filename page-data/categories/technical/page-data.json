@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/categories/technical/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"id":"26647e8f-6ce9-55f6-9870-4e46ae14973b","fields":{"slug":"/my-first-post/"},"frontmatter":{"title":"this is title","date":"December 24, 2024","description":"23sdfg","tags":["ba","te"],"categories":["Technical"]}}}]}},"pageContext":{"category":"Technical"}},
+    "staticQueryHashes": []}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-blog-js",
+    "path": "/blog/",
+    "result": {"data":{"posts":{"edges":[{"node":{"id":"26647e8f-6ce9-55f6-9870-4e46ae14973b","fields":{"slug":"/my-first-post/"},"frontmatter":{"date":"December 24, 2024","title":"this is title"}}}]}},"pageContext":{}},
+    "staticQueryHashes": []}
