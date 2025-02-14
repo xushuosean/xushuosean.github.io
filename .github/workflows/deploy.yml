@@ -13,14 +13,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 拉取主仓库代码
+      # 拉取主仓库代码并初始化子模块
       - name: Clone Code
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          # 初始化并拉取子模块
           submodules: true
-          token: ${{ secrets.SUBMODULE_PAT }}
+          token: ${{ secrets.SUBMODULE_PAT }}  # 确保 SUBMODULE_PAT 已配置
+
+      # 调试步骤：检查子模块是否被正确拉取
+      - name: Check Submodule
+        run: |
+          ls -la content
 
       # 安装 Node.js 环境
       - name: Setup Node.js
@@ -56,4 +60,4 @@ jobs:
         with:
           FOLDER: public
           BRANCH: gh-pages
-          TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TOKEN: ${{ secrets.ACCESS_TOKEN }}  # 确保 ACCESS_TOKEN 已配置
