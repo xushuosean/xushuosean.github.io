@@ -1,13 +1,12 @@
-import React from 'react'
 import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
+import React from 'react'
+import Helmet from 'react-helmet'
 
-import { Layout } from '../components/Layout'
-import { SEO } from '../components/SEO'
-import { PostLayout } from '../components/PostLayout'
-import { Comments } from '../components/Comments'
 import { Hero } from '../components/Hero'
+import { Layout } from '../components/Layout'
+import { PostLayout } from '../components/PostLayout'
+import { SEO } from '../components/SEO'
 import config from '../utils/config'
 
 export default function PostTemplate({ data }) {
@@ -36,7 +35,7 @@ export default function PostTemplate({ data }) {
         {!comments_off && (
           <section id="comments" className="comments">
             <h3>Comments</h3>
-            <Comments />
+            {/* <Comments /> */}
           </section>
         )}
       </PostLayout>

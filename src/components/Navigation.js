@@ -1,18 +1,17 @@
-import React, { useState } from 'react'
 import { Link } from 'gatsby'
+import React, { useState } from 'react'
 import { SocialIcon } from 'react-social-icons'
 
-import floppy from '../assets/nav-floppy.png'
-import { Moon } from '../assets/Moon'
-import { Sun } from '../assets/Sun'
-import { Menu } from '../assets/Menu'
 import { Close } from '../assets/Close'
+import { Menu } from '../assets/Menu'
+import { Moon } from '../assets/Moon'
+import floppy from '../assets/nav-floppy.png'
+import { Sun } from '../assets/Sun'
 
 const links = [
   { url: '/notes', label: 'Notes' },
   { url: '/blog', label: 'Articles' },
   { url: '/projects', label: 'Projects' },
-  { url: '/illustration', label: 'Illustration' },
   { url: '/me', label: 'About me' },
 ]
 

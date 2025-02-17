@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react'
-import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
+import React, { useEffect, useState } from 'react'
+import Helmet from 'react-helmet'
 
 import { ExternalLinkIcon } from '../assets/ExternalLinkIcon'
 import { StarIcon } from '../assets/StarIcon'
-import { Layout } from '../components/Layout'
-import { SEO } from '../components/SEO'
 import { Hero } from '../components/Hero'
+import { Layout } from '../components/Layout'
 import { PageLayout } from '../components/PageLayout'
-import config from '../utils/config'
+import { SEO } from '../components/SEO'
 import { projectsList } from '../data/projectsList'
+import config from '../utils/config'
 
 export default function Projects() {
   const [repos, setRepos] = useState([])
@@ -20,7 +20,7 @@ export default function Projects() {
   useEffect(() => {
     async function getStars() {
       const repos = await fetch(
-        'https://api.github.com/users/taniarascia/repos?per_page=100'
+        'https://api.github.com/users/xushuosean/repos?per_page=100'
       )
 
       return repos.json()

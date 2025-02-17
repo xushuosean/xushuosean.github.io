@@ -8,7 +8,7 @@ export const useActiveHash = (itemIds) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveHash(entry.target.id)
+            setActiveHash(encodeURI(entry.target.id))
           }
         })
       },
@@ -18,7 +18,9 @@ export const useActiveHash = (itemIds) => {
     const elements = []
 
     itemIds.forEach((id) => {
-      elements.push(document.getElementById(id))
+      const cnId = decodeURI(id);
+      if (document.getElementById(cnId))
+        elements.push(document.getElementById(cnId))
     })
 
     elements.forEach((element) => {

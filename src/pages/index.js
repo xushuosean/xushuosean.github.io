@@ -1,18 +1,18 @@
-import React, { useMemo } from 'react'
 import { Link, graphql } from 'gatsby'
-import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
+import React, { useMemo } from 'react'
+import Helmet from 'react-helmet'
 
-import { Layout } from '../components/Layout'
-import { Posts } from '../components/Posts'
-import { SEO } from '../components/SEO'
+import floppy from '../assets/floppylogo.png'
 import { Heading } from '../components/Heading'
 import { Hero } from '../components/Hero'
+import { Layout } from '../components/Layout'
 import { PageLayout } from '../components/PageLayout'
+import { Posts } from '../components/Posts'
+import { SEO } from '../components/SEO'
 import { projectsList } from '../data/projectsList'
-import { getSimplifiedPosts } from '../utils/helpers'
 import config from '../utils/config'
-import floppy from '../assets/floppylogo.png'
+import { getSimplifiedPosts } from '../utils/helpers'
 
 export default function Index({ data }) {
   const latestNotes = data.latestNotes.edges
@@ -35,13 +35,11 @@ export default function Index({ data }) {
       <SEO />
 
       <PageLayout>
-        <Hero title="Hey, I'm Tania!" type="index">
+        <Hero title="Hey, I'm Sean!" type="index">
           <div className="hero-wrapper">
             <div>
               <p className="hero-description">
-                I'm a software engineer, open-source creator, and former
-                professional chef. I've been making websites since 1998 and
-                writing on this blog for the past decade.
+                
               </p>
               <p className="hero-description">
                 I enjoy weight-lifting, reading sci-fi and fantasy, playing
@@ -62,7 +60,7 @@ export default function Index({ data }) {
                 .
               </p>
             </div>
-            <img src="/ram.png" className="hero-image" alt="RAM Ram" />
+            {/* <img src="/ram.png" className="hero-image" alt="RAM Ram" /> */}
           </div>
         </Hero>
 

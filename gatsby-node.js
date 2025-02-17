@@ -13,6 +13,8 @@ function slugify(str) {
   )
 }
 
+console.log(slugify('fasd'))
+
 const createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 

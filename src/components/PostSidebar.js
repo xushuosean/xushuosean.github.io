@@ -1,9 +1,9 @@
-import React, { useState, useLayoutEffect, useEffect } from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 
-import { useActiveHash } from '../utils/hooks/useActiveHash'
 import { slugify } from '../utils/helpers'
+import { useActiveHash } from '../utils/hooks/useActiveHash'
 
 export const PostSidebar = ({ thumbnail, toc, tags = [], date }) => {
   const [tocLinks, setTocLinks] = useState([])
@@ -14,6 +14,8 @@ export const PostSidebar = ({ thumbnail, toc, tags = [], date }) => {
     anchors.forEach((a) => {
       ids.push(a.hash.replace('#', ''))
     }, [])
+
+    console.log(ids, 'hereids', anchors)
 
     setTocLinks(ids)
   }, [toc])

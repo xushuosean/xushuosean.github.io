@@ -1,61 +1,24 @@
-import React from 'react'
 import { Link } from 'gatsby'
+import React from 'react'
 
 import floppy from '../assets/nav-floppy.png'
 
 export const Sidebar = () => {
   const links = [
     {
-      url: '/musical-instrument-web-audio-api',
-      title: 'Keyboard accordion',
-    },
-    {
-      url: '/how-to-create-a-memory-game-super-mario-with-plain-javascript',
-      title: 'Super Mario memory game',
-    },
-    {
-      url: '/animorphs',
-      title: 'The lore of Animorphs',
-    },
-    {
-      url: '/writing-an-emulator-in-javascript-chip8/',
-      title: 'JavaScript emulator',
-    },
-    {
-      url: '/javascript-mvc-todo-app',
-      title: 'MVC basics',
-    },
-    {
-      url: '/overview-of-css-concepts/',
-      title: 'CSS guidebook',
-    },
-    {
-      url: '/react-architecture-directory-structure',
-      title: 'React architecture',
-    },
-    {
-      url: '/building-takenote',
-      title: 'TakeNote post-mortem',
-    },
-    {
-      url: '/asynchronous-javascript-event-loop-callbacks-promises-async-await/',
-      title: 'The event loop',
-    },
-    {
-      url: '/setting-up-a-brand-new-mac-for-development',
-      title: 'macOS Setup',
-    },
-    {
-      url: '/schema-based-form-system',
-      title: 'Schema-based form system',
-    },
-    {
-      url: '/everything-i-know-as-a-software-developer-without-a-degree',
-      title: 'Everything I knew (in 2019)',
-    },
-    {
       url: '/topics',
       title: 'All topics',
+    },
+  ]
+
+  const packagesLinks = [
+    {
+      url: 'https://xushuosean.github.io/vue2-context',
+      title: 'vue2-context',
+    },
+    {
+      url: 'https://xushuosean.github.io/clipboard_keyboard',
+      title: 'clipboard_keyboard',
     },
   ]
 
@@ -68,11 +31,11 @@ export const Sidebar = () => {
               <img
                 src={floppy}
                 className="sidebar-logo"
-                alt="Tania Rascia"
+                alt="Sean xushuo"
                 title="💾"
               />
             </span>
-            <span>Tania Rascia</span>
+            <span>Sean xushuo</span>
           </Link>
         </div>
         <div className="sidebar-container">
@@ -80,13 +43,13 @@ export const Sidebar = () => {
             <h2>About me</h2>
             <div className="sidebar-content">
               <p>
-                I'm <Link to="/me">Tania</Link>, software engineer and
+                I'm <Link to="/me">Sean</Link>, frontend engineer and
                 open-source creator. This is my digital garden. 🌱
               </p>
             </div>
           </section>
 
-          <section className="sidebar-section">
+          {/* <section className="sidebar-section">
             <h2>Stay in touch</h2>
             <p>Get an update when I write something new!</p>
             <p>
@@ -108,13 +71,24 @@ export const Sidebar = () => {
             >
               Email Signup
             </a>
-          </section>
+          </section> */}
 
           <section className="sidebar-section">
             <h2>Some of my favorite posts</h2>
             <nav className="sidebar-menu">
               {links.map((link) => (
                 <Link key={link.url} to={link.url}>
+                  {link.title}
+                </Link>
+              ))}
+            </nav>
+          </section>
+
+          <section className="sidebar-section">
+            <h2>Some of my npm packages</h2>
+            <nav className="sidebar-menu">
+              {packagesLinks.map((link) => (
+                <Link key={link.url} to={link.url} _blank>
                   {link.title}
                 </Link>
               ))}
