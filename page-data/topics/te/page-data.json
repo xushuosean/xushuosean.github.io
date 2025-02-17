@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-topic-js",
     "path": "/topics/te/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"id":"26647e8f-6ce9-55f6-9870-4e46ae14973b","fields":{"slug":"/my-first-post/"},"frontmatter":{"date":"December 24, 2024","title":"this is title","tags":["ba","te"],"categories":["Technical"]}}}]}},"pageContext":{"tag":"te"}},
+    "result": {"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"id":"26647e8f-6ce9-55f6-9870-4e46ae14973b","fields":{"slug":"/my-first-post/"},"frontmatter":{"date":"December 24, 2024","title":"this is title","tags":["ba","te"],"categories":["Technical"]}}},{"node":{"id":"3891f5ae-f2fd-5af4-9f7a-4dd7f9e651ae","fields":{"slug":"/me/"},"frontmatter":{"date":"December 24, 2024","title":"this is title","tags":["ba","te"],"categories":["Technical"]}}}]}},"pageContext":{"tag":"te"}},
     "staticQueryHashes": []}
