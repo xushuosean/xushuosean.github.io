@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-topic-js",
+    "path": "/topics/mxgraph/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"id":"b4a99e56-3891-5583-807d-51ca1cdf44be","fields":{"slug":"/mxgraph-resizer/"},"frontmatter":{"date":"December 24, 2024","title":"mxgraph resizer","tags":["mxgraph"],"categories":["Technical"]}}}]}},"pageContext":{"tag":"mxgraph"}},
+    "staticQueryHashes": []}

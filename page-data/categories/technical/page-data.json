@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-category-js",
     "path": "/categories/technical/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"id":"26647e8f-6ce9-55f6-9870-4e46ae14973b","fields":{"slug":"/my-first-post/"},"frontmatter":{"title":"this is title","date":"December 24, 2024","description":"23sdfg","tags":["ba","te"],"categories":["Technical"]}}},{"node":{"id":"3891f5ae-f2fd-5af4-9f7a-4dd7f9e651ae","fields":{"slug":"/me/"},"frontmatter":{"title":"this is title","date":"December 24, 2024","description":"23sdfg","tags":["ba","te"],"categories":["Technical"]}}}]}},"pageContext":{"category":"Technical"}},
+    "result": {"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"id":"b4a99e56-3891-5583-807d-51ca1cdf44be","fields":{"slug":"/mxgraph-resizer/"},"frontmatter":{"title":"mxgraph resizer","date":"December 24, 2024","description":"关于mxgraph resizer的使用","tags":["mxgraph"],"categories":["Technical"]}}},{"node":{"id":"26647e8f-6ce9-55f6-9870-4e46ae14973b","fields":{"slug":"/my-first-post/"},"frontmatter":{"title":"this is title","date":"December 24, 2024","description":"23sdfg","tags":["ba","te"],"categories":["Technical"]}}}]}},"pageContext":{"category":"Technical"}},
     "staticQueryHashes": []}

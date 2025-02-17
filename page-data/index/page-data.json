@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-js",
     "path": "/",
-    "result": {"data":{"latestNotes":{"edges":[]},"latestArticles":{"edges":[{"node":{"id":"26647e8f-6ce9-55f6-9870-4e46ae14973b","fields":{"slug":"/my-first-post/"},"frontmatter":{"date":"December 24, 2024","title":"this is title","tags":["ba","te"],"categories":["Technical"]}}}]},"highlights":{"edges":[]}},"pageContext":{}},
+    "result": {"data":{"latestNotes":{"edges":[]},"latestArticles":{"edges":[{"node":{"id":"b4a99e56-3891-5583-807d-51ca1cdf44be","fields":{"slug":"/mxgraph-resizer/"},"frontmatter":{"date":"December 24, 2024","title":"mxgraph resizer","tags":["mxgraph"],"categories":["Technical"]}}},{"node":{"id":"26647e8f-6ce9-55f6-9870-4e46ae14973b","fields":{"slug":"/my-first-post/"},"frontmatter":{"date":"December 24, 2024","title":"this is title","tags":["ba","te"],"categories":["Technical"]}}}]},"highlights":{"edges":[]}},"pageContext":{}},
     "staticQueryHashes": []}

@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-topics-js",
     "path": "/topics/",
-    "result": {"data":{"tags":{"group":[{"name":"ba","totalCount":2},{"name":"te","totalCount":2}]}},"pageContext":{}},
+    "result": {"data":{"tags":{"group":[{"name":"ba","totalCount":1},{"name":"mxgraph","totalCount":1},{"name":"te","totalCount":1}]}},"pageContext":{}},
     "staticQueryHashes": []}
