@@ -1,5 +1,4 @@
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import React from 'react'
 import Helmet from 'react-helmet'
 
@@ -19,12 +18,6 @@ export default function PostTemplate({ data }) {
       <SEO postPath={post.fields.slug} postNode={post} postSEO />
 
       <PostLayout post={post}>
-        {thumbnail && (
-          <Img
-            fixed={thumbnail?.childImageSharp?.fixed}
-            className="main-article-thumbnail"
-          />
-        )}
         <Hero title={title} type="post" />
 
         <div
@@ -61,13 +54,6 @@ export const pageQuery = graphql`
         categories
         description
         comments_off
-        thumbnail {
-          childImageSharp {
-            fixed(width: 75, height: 75) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
       }
     }
   }

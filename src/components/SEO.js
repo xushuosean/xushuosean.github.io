@@ -14,10 +14,6 @@ export const SEO = ({ postNode, postPath, postSEO, customDescription }) => {
     title = postMeta.title
     description = postNode.excerpt
 
-    if (postMeta.thumbnail) {
-      image = postMeta.thumbnail.childImageSharp.fixed.src
-    }
-
     postURL = `${config.siteUrl}${postPath}`
   } else {
     title = config.siteTitle

@@ -1,5 +1,4 @@
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
 import React, { useEffect, useLayoutEffect, useState } from 'react'
 
 import { slugify } from '../utils/helpers'
@@ -41,11 +40,6 @@ export const PostSidebar = ({ thumbnail, toc, tags = [], date }) => {
   return (
     <aside className="post-sidebar">
       <div className="post-sidebar-content">
-        {thumbnail && (
-          <div className="post-sidebar-thumbnail">
-            <Img fixed={thumbnail?.childImageSharp?.fixed} />
-          </div>
-        )}
 
         <section className="post-sidebar-section">
           <h2>Published</h2>

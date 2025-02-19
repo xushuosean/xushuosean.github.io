@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 
 export const useGetTaxonomies = () => {
   const data = useStaticQuery(graphql`
@@ -32,13 +32,6 @@ export const useGetTaxonomies = () => {
               date(formatString: "MMMM DD, YYYY")
               title
               tags
-              thumbnail {
-                childImageSharp {
-                  fixed(width: 25, height: 25) {
-                    ...GatsbyImageSharpFixed
-                  }
-                }
-              }
             }
           }
         }
